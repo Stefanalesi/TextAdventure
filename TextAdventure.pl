@@ -16,7 +16,7 @@ path(corrdiro1, e, corrdiro2).
 path(corrdiro2, w, corrdiro1).
 
 closed(bedroomdoor).
-path(corrdiro1, s, bedroom) :- closed(bedroomdoor), write('Die Türe ist verschlossen. Finde einen weg um sie zu öffnen.'), fail.
+path(corrdiro1, s, bedroom) :- closed(bedroomdoor), write('Die Tür ist verschlossen. Finde einen weg um sie zu öffnen.'), fail.
 path(corrdiro1, s, bedroom) :- \+ closed(bedroomdoor).
 path(bedroom, n, corrdiro1).
 
@@ -50,10 +50,10 @@ useable_at(vent) :- holding(schraubenschlüssel), assert(holding(funkgerät)) ,w
 useable_at(vent) :- \+ holding(schraubenschlüssel),write('Du brauchst einen Schraubenschlüssel um den Lüftungsschaft zu öffnen.'), nl.
 
 useable_at(schrank) :- retract(closed(bedroomdoor)), assert(holding(batterie)) ,write('Du hast eine Batterie Gefunden'), nl.
-useable_at(schrank) :- \+ closed(schrank), write('Du hast den schrank bereits durchsucht'), nl.
+useable_at(schrank) :- \+ closed(schrank), write('Du hast den Schrank bereits durchsucht'), nl.
 
-useable_at(corrdiro1) :- holding(dietrich), retract(closed(bedroomdoor)), write('Du hast die Türe geöffnet.'), nl.
-useable_at(corrdiro1) :- \+ holding(dietrich),write('Du brauchst einen Schlüssel um die Türe zu öffnen oder du findest einen anderen weg :), aber leider hast es nicht mehr geschafft den Schlüssel rechtzeitig mitzunehmen.'), nl.
+useable_at(corrdiro1) :- holding(dietrich), retract(closed(bedroomdoor)), write('Du hast die Tür geöffnet.'), nl.
+useable_at(corrdiro1) :- \+ holding(dietrich),write('Du brauchst einen Schlüssel um die Tür zu öffnen oder du findest einen anderen Weg :), aber leider hast es nicht mehr geschafft den Schlüssel rechtzeitig mitzunehmen.'), nl.
 
 useable_at(workbench) :- holding(bueroklammer), holding(taschenmesser), retract(holding(bueroklammer)), retract(holding(taschenmesser)), assert(holding(dietrich)) ,write('Du hast dir einen Dietrich gebaut vielleicht kannst du ihn ja einstetzten.'), nl.
 useable_at(workbench) :- holding(funkgerät), holding(batterie), retract(holding(batterie)), write('Glückwunsch du hast es geschafft! Mit dem Funkgerät hast du das Militär kontaktiert und diese haben dir geholfen aus dem Bunker zu kommen.'), nl.
@@ -215,7 +215,7 @@ describe(bunkerdoor) :-
 write('Vor dir liegt eine Türe die in den Bünker führt'), nl.
 
 describe(bunker) :-
-write('Du betrittst deinen Bunker. Es ist dunkel, aber du siehst dennoch kann man die umrisse der Objekte erkennn. Da du jetzt im Bunker bist musst du einen weg finden um Hilfe von der ausenwelt anzufragen, aber dafür hast du nicht lange Zeit da du nur begrentzt essen hast.'), nl,
+write('Du betrittst deinen Bunker. Es ist dunkel, aber du siehst dennoch kann man die Umrisse der Objekte erkennn. Da du jetzt im Bunker bist musst du einen weg finden um Hilfe von der Außenwelt anzufragen, aber dafür hast du nicht lange Zeit da du nur begrentzt Essen hast.'), nl,
 write('Einige davon könnten nützliche Gegenstände enthalten. Vielleicht solltest du sie durchsuchen.'), nl.
 
 describe(livingroom) :-
