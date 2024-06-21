@@ -1,0 +1,31 @@
+
+Escape the Bunker
+
+by Stefan Alesi, Richter Tobias, Andreas Hasenschwandtner
+
+Escape the Bunker is a text-based adventure game where you must navigate through a 
+post-apocalyptic bunker to find a way to contact the outside world and escape. 
+The world above has been devastated by a nuclear disaster, and your only hope 
+of survival is to use the items and resources you find within the bunker. 
+However, time is running out as your food supply is limited.
+
+Game Mechanics:
+- Navigate through various rooms in the bunker using standard directional commands (n, s, e, w).
+- Collect and use items to solve puzzles and unlock new areas.
+- Monitor your food supply as it decreases over time, adding urgency to your quest.
+- Craft useful tools at the workbench to aid in your escape.
+
+Starting in your home, you must quickly decide which items to bring into the bunker. 
+Once inside, explore rooms such as the living room, storage, and bedroom. 
+Each room contains different items and potential solutions to the obstacles you face. 
+Use items like a screwdriver, paperclip, or multitool to unlock doors and compartments, 
+ultimately leading you to the tools needed to contact the military and secure your rescue.
+
+Will you manage to survive and escape the bunker, or will time run out? 
+Test your wits and resourcefulness in this gripping adventure!
+
+Map of the Bunker:
+Home -> Bunker Door -> Bunker -> Living Room -> TV
+                      -> Corridor 1 -> Bedroom
+                      -> Corridor 2 -> Storage -> Workbench
+                                      -> Wardrobe
